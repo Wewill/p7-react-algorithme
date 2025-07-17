@@ -1,5 +1,5 @@
 import type { Recipe } from "../types/recipe";
-import Image from "./image";
+import Image from "./image"; // Component for lazy loading images
 
 const Ingredient = ({ i }: { i: Recipe["ingredients"][number] }) => (
   <li>
