@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-Manrope: "Manrope", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-Anton: "Anton", ui-sans-serif, system-ui, sans-serif,
+"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+
+:root {
+  --main-color: #000;
+  --color-primary: #fff200;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  @apply bg-zinc-100;
+
+ font-family: var(--font-Manrope);
+
+  color: var(--main-color);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  /* margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh; */
+}
+
+/* Use all the available space */
+#root {
+  width: 100%;
+  height: calc(100vh - 90px);
+}
+
+a {
+  text-decoration: inherit;
+}
+
+a:hover,
+a:active {
+  color: var(--color-primary);
+}
